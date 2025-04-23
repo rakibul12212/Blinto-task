@@ -28,9 +28,7 @@
     margin-bottom: 1rem;
 }
 
-.highlight {
-    color: #6366f1;
-}
+
 
 .section-description {
     max-width: 700px;
@@ -46,11 +44,11 @@
 }
 
 .stat-box {
-    /* padding: 16px; */
+    
     text-align: center;
     max-width: 800px;
     padding: 0px 20px;
-    /* Reduced padding for the stat box */
+   
 }
 
 .stat-box.border {
@@ -64,17 +62,17 @@
     margin-bottom: 0.25rem;
     margin-top: 0.25rem;
     padding-inline: 70px;
-    /* Reduced margin for stat number */
+    
 }
 
 .stat-label {
     color: #374151;
     font-weight: 500;
     margin-bottom: 0.25rem;
-    /* Reduced margin for stat label */
+    
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
     .stats-row {
         flex-direction: column;
@@ -82,31 +80,28 @@
         gap: 1.5rem;
     }
 
-    /* Change right border to bottom border on mobile */
+   
     .stat-box.border {
         border-right: none;
         border-bottom: 1px solid rgb(203, 203, 203);
-        /* padding-bottom: 1rem; */
+       
     }
 
     .stat-box {
         padding: 10px 15px;
-        /* Reduced padding on mobile */
+        
     }
 
     .stat-number {
         font-size: 4rem;
         font-weight: 500;
-        /* Reduced font size for stat number on mobile */
         margin-bottom: 1rem;
-        /* Reduced margin for stat number on mobile */
+      
     }
 
     .stat-label {
         font-size: 1rem;
         font-weight: 700;
-        /* Reduced font size for stat label on mobile */
         margin-top: 1rem;
-        /* Reduced margin for stat label on mobile */
     }
 }
