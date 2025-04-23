@@ -36,23 +36,20 @@
     }
 }
 
-/* Mobile styles: switch to grid with 3 columns */
+
 @media (max-width: 480px) {
     .company-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 0.75rem;
-        /* reduced gap */
         justify-items: center;
         padding: 1rem 0;
-        /* removed left & right padding */
+        
     }
 
     .company-container img {
         max-height: 45px;
-        /* increased size */
         max-width: 96px;
-        /* optional: maintain good scaling */
         width: 100%;
     }
 }
