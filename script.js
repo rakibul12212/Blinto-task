@@ -58,4 +58,11 @@ loadSection('header');
 loadSection('hero');
 loadSection('company')
 loadSection('feature')
+loadSection('result')
+loadSection('about')
+loadSection('testimonial')
+loadSection('location')
+loadSection('faq')
+loadSection('downloadApp')
+loadSection('footer')
 
