@@ -1,0 +1,81 @@
+.procrastinators-section {
+    padding: 4rem 1rem;
+    background-color: #fff;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.content {
+    flex: 1;
+    min-width: 280px;
+}
+
+.image-wrapper {
+    flex: 1;
+    min-width: 280px;
+}
+
+.image-wrapper img {
+    width: 100%;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+.subtitle {
+    color: #6366f1;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 1rem;
+}
+
+.description {
+    color: #6b7280;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    max-width: 500px;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.feature h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.25rem;
+}
+
+.feature p {
+    font-size: 0.95rem;
+    color: #4b5563;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+}
