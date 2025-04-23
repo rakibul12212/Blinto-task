@@ -1,0 +1,72 @@
+.hero-section {
+    background: url('/img/banner/banner-bg.png') no-repeat;
+    background-size: cover;
+
+}
+
+.hero {
+
+    text-align: center;
+    padding: 3rem 1rem;
+
+}
+
+.hero small {
+    display: inline-block;
+    color: #2a1abb;
+    background-color: #ceced0;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #111827;
+}
+
+.hero p {
+    font-size: 1rem;
+    color: #4b5563;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+.store-buttons img {
+    height: 45px;
+
+    transition: transform 0.3s ease;
+}
+
+.store-buttons img:hover {
+    transform: scale(1.05);
+}
+
+.bg-img {
+    width: 100%;
+    max-width: 900px;
+    margin-top: 2rem;
+
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .store-buttons img {
+        height: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.6rem;
+    }
+
+    .store-buttons img {
+        height: 35px;
+        margin: 0.3rem;
+    }
+}
