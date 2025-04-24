@@ -1,25 +1,21 @@
 .hero-section {
     background: url('/img/banner/banner-bg.png') no-repeat;
     background-size: cover;
-
-
 }
-
 .hero {
-
     text-align: center;
-    padding: 3rem 1rem;
-
-
+    padding: 0rem 1rem;
 }
 
 .hero small {
     display: inline-block;
-    color: #2a1abb;
-    background-color: #ceced0;
-    padding: 0.4rem 1rem;
-    border-radius: 20px;
-    font-size: 0.8rem;
+    padding: 0.25rem 0.9rem;
+    background-color: #f0f4ff;
+    color: #3b82f6;
+    font-weight: 500;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    margin-top: 4rem;
 }
 
 .hero h1 {
