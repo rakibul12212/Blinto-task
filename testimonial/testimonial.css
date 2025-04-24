@@ -1,16 +1,8 @@
-body {
-    font-family: 'Segoe UI', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f9fafe;
-    color: #333;
-}
-
 .testimonials-container {
     max-width: 1200px;
     margin: auto;
-    padding: 2rem 1rem;
-    
+    padding: 01rem 1rem;
+    background: #f9fafe;
     text-align: center;
 }
 
@@ -40,7 +32,6 @@ body {
     display: grid;
     gap: 1.5rem;
     grid-template-columns: repeat(1, 1fr);
-    /* Default to 1 card per row for mobile */
     margin-bottom: 2rem;
 }
 
