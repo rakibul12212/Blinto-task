@@ -1,4 +1,4 @@
-.testimonials-container {
+.testimonial-container {
     max-width: 1400px;
     margin: auto;
     padding: 01rem 1rem;
@@ -67,6 +67,26 @@
     font-size: 0.85rem;
     color: #666;
 }
+
+
+.view-more-btn {
+    display: block;
+    /* Makes margin: auto work */
+    margin: 1.5rem auto 0 auto;
+    /* Top margin + centered horizontally */
+    padding: 0.5rem 1.5rem;
+    background-color: #3b82f6;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+
+.view-more-btn:hover {
+    background-color: #2563eb;
+}
+
 
 
 @media (max-width: 600px) {

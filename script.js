@@ -1,17 +1,11 @@
-
-
-
-// Dynamically load hero.html content inside #hero-container
-// Utility function to load a CSS file dynamically
 function loadCSS(href) {
   return new Promise((resolve, reject) => {
     if (document.querySelector(`link[href="${href}"]`)) {
-      // CSS already loaded
       resolve();
       return;
     }
-    const link = document.createElement('link');
-    link.rel = 'stylesheet';
+    const link = document.createElement("link");
+    link.rel = "stylesheet";
     link.href = href;
     link.onload = () => resolve();
     link.onerror = () => reject(`Failed to load CSS: ${href}`);
@@ -19,15 +13,13 @@ function loadCSS(href) {
   });
 }
 
-// Utility function to load a JS file dynamically
 function loadJS(src) {
   return new Promise((resolve, reject) => {
     if (document.querySelector(`script[src="${src}"]`)) {
-      // Script already loaded
       resolve();
       return;
     }
-    const script = document.createElement('script');
+    const script = document.createElement("script");
     script.src = src;
     script.defer = true;
     script.onload = () => resolve();
@@ -36,33 +28,43 @@ function loadJS(src) {
   });
 }
 
-// Function to load a section: HTML + CSS + JS
+function capitalize(str) {
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
 async function loadSection(sectionName) {
   try {
-    // Load the HTML and insert into container
+    const container = document.getElementById(`${sectionName}-container`);
+    if (!container)
+      throw new Error(`Container not found: ${sectionName}-container`);
+
     const res = await fetch(`${sectionName}/${sectionName}.html`);
     if (!res.ok) throw new Error(`Failed to load HTML for ${sectionName}`);
     const html = await res.text();
-    document.getElementById(`${sectionName}-container`).innerHTML = html;
+    container.innerHTML = html;
 
-    // Load CSS and JS for the section
     await loadCSS(`${sectionName}/${sectionName}.css`);
     await loadJS(`${sectionName}/${sectionName}.js`);
+
+    const initFn = window[`init${capitalize(sectionName)}Section`];
+    if (typeof initFn === "function") initFn();
+
+    console.log(`${sectionName} loaded and initialized.`);
   } catch (error) {
     console.error(error);
   }
 }
 
-// Load the sections you want
-loadSection('header');
-loadSection('hero');
-loadSection('company')
-loadSection('feature')
-loadSection('result')
-loadSection('about')
-loadSection('testimonial')
-loadSection('location')
-loadSection('faq')
-loadSection('downloadApp')
-loadSection('footer')
-
+[
+  "header",
+  "hero",
+  "company",
+  "feature",
+  "result",
+  "about",
+  "testimonial",
+  "location",
+  "faq",
+  "downloadApp",
+  "footer",
+].forEach(loadSection);
