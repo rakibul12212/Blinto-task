@@ -6,12 +6,13 @@
 .download-container {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     max-width: 1400px;
     margin: auto;
     text-align: left;
-    gap: 4rem;
+    gap: 16rem;
     flex-wrap: wrap;
+    padding-left: 2rem  ;
 }
 
 
@@ -20,16 +21,13 @@
 }
 
 .content h1 {
-    font-size: 42px;
+    font-size: 1.8rem;
     font-weight: 700;
     color: #1e1e2f;
     line-height: 1.2;
     margin-bottom: 20px;
 }
 
-.content h1 span {
-    color: #6c63ff;
-}
 
 .content p {
     font-size: 16px;

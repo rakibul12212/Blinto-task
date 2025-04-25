@@ -1,4 +1,4 @@
-.procrastinators-section {
+.about-section {
     padding: 4rem 1rem;
     background-color: #fff;
     font-family: sans-serif;
@@ -29,7 +29,7 @@
     object-fit: cover;
 }
 
-.label {
+.container .label {
     display: inline-block;
     padding: 0.25rem 0.9rem;
     background-color: #f0f4ff;
@@ -41,7 +41,7 @@
 }
 
 .title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 700;
     color: #111827;
     margin-bottom: 1rem;

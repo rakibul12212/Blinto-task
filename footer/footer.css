@@ -67,18 +67,14 @@
     color: #666;
 }
 
-/* ---------------------- */
-/* Responsive Breakpoints */
-/* ---------------------- */
 
-/* Tablet View */
 @media (max-width: 1024px) {
     .footer-top {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
-/* Mobile View */
+
 @media (max-width: 600px) {
     .footer-top {
         grid-template-columns: repeat(1, 1fr);

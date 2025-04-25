@@ -7,7 +7,7 @@
     padding: 0rem 1rem;
 }
 
-.hero small {
+.hero .label {
     display: inline-block;
     padding: 0.25rem 0.9rem;
     background-color: #f0f4ff;
