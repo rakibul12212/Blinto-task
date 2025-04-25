@@ -1,7 +1,9 @@
 .footer {
     background-color: #f9f9f9;
-    padding: 40px 20px;
-    border-top: 1px solid #ddd;
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    text-align: left;
 }
 
 .footer-top {
@@ -42,7 +44,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 10px;
 }
 
 .footer-logo {
@@ -92,7 +94,5 @@
         justify-content: center;
     }
 
-    .footer-up {
-        order: -1;
-    }
+    
 }

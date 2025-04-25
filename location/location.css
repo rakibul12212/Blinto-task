@@ -1,8 +1,12 @@
-.location-container {
+.location-section {
     background-color: white;
+}
+
+.location-container {
+
     max-width: 1200px;
     margin: auto;
-    padding: 2rem 1rem;
+    padding: 4rem 1rem;
     text-align: left;
 }
 

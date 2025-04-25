@@ -1,14 +1,20 @@
-/* Section Layout */
 .download-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 100px 120px;
-    min-height: 100vh;
-    background: #f1f5fe;
+    background: #e2eafd;
+    margin: auto;
 }
 
-/* Left Text Content */
+.download-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1400px;
+    margin: auto;
+    text-align: left;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+
 .content {
     max-width: 40%;
 }
@@ -32,10 +38,10 @@
     margin-bottom: 32px;
 }
 
-/* Buttons */
 .buttons {
     display: flex;
     gap: 16px;
+    flex-wrap: wrap;
 }
 
 .btn {
@@ -60,57 +66,79 @@
     border: none;
 }
 
-/* Phone Mockups */
+
 .mockups {
     position: relative;
-    width: 50%;
-    height: auto;
+    width: 45%;
+    height: 400px;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .phone {
-    width: 300px;
+    position: absolute;
+    width: 290px;
     border-radius: 40px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
-    transition: 0.3s;
 }
 
 .back {
-    position: absolute;
-    left: 60px;
     top: 40px;
+    left: -20px;
     z-index: 1;
-    opacity: 0.95;
 }
 
 .front {
-    position: relative;
+    top: -50px;
+    right: -90px;
     z-index: 2;
 }
 
-/* Responsive */
-@media (max-width: 1024px) {
-    .download-section {
-        flex-direction: column;
-        padding: 60px 20px;
+
+
+@media (max-width: 768px) {
+    .download-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 40px 0;
+        padding: 10px 20px;
         text-align: center;
     }
 
     .content {
         max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
     }
 
     .mockups {
-        margin-top: 40px;
-        flex-direction: column;
+        position: relative;
+        width: 100%;
+        height: auto;
+        overflow: visible;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
     }
 
-    .back {
+    .phone {
         position: relative;
-        left: 0;
+        width: 50%;
+        border-radius: 30px;
+    }
+
+    .back,
+    .front {
         top: 0;
-        margin-bottom: 20px;
+        left: 0;
+        right: 0;
+        z-index: auto;
     }
 }
