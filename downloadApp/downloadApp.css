@@ -79,7 +79,7 @@
 
 .phone {
     position: absolute;
-    width: 290px;
+    width: 300px;
     border-radius: 40px;
 }
 
@@ -90,8 +90,8 @@
 }
 
 .front {
-    top: -50px;
-    right: -90px;
+    top: -80px;
+    right: -50px;
     z-index: 2;
 }
 
@@ -102,7 +102,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         gap: 40px 0;
-        padding: 10px 20px;
+        padding: 5px 10px;
         text-align: center;
     }
 
@@ -136,7 +136,7 @@
 
     .back,
     .front {
-        top: 0;
+        top: -10px;
         left: 0;
         right: 0;
         z-index: auto;
