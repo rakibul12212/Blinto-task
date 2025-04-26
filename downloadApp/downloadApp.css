@@ -5,14 +5,13 @@
 
 .download-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     max-width: 1200px;
-    margin: auto;
-    text-align: left;
-    gap: 16rem;
-    flex-wrap: wrap;
+    margin: 0 auto;
     padding-left: 2rem;
+    gap: 6rem;
+    flex-wrap: wrap;
 }
 
 
