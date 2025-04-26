@@ -9,7 +9,7 @@
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding-left: 2rem;
+    padding-left: 5rem;
     gap: 6rem;
     flex-wrap: wrap;
 }
@@ -137,5 +137,17 @@
         left: 0;
         right: 0;
         z-index: auto;
+    }
+
+    .content h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: left;
+      
+    }
+    .content p {
+        
+        text-align: left;
+      
     }
 }

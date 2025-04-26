@@ -7,7 +7,7 @@
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 5rem;
 }
 
 .label {
@@ -45,6 +45,7 @@
 }
 
 .features {
+    padding-top: 4rem;
     flex: 1;
     min-width: 300px;
     display: flex;
@@ -53,7 +54,7 @@
 }
 
 .feature {
-    padding: 1.5rem;
+    padding-left: 2rem;
     transition: all 0.3s ease;
 }
 
@@ -64,8 +65,8 @@
 
 .feature.border:hover {
     border-left-color: #6366f1;
-    background-color: #f9fafb;
-    transform: translateX(4px);
+
+
 }
 
 .feature h4 {
@@ -103,7 +104,7 @@
     transform: scale(1.02);
 }
 
-/* Responsive adjustments */
+
 @media (min-width: 1024px) {
     .content-wrapper {
         flex-wrap: nowrap;
@@ -139,4 +140,25 @@
     .feature p {
         font-size: 0.9375rem;
     }
+
+    .features {
+        padding-top: 1rem;
+        
+    }
+
+    .feature {
+        padding-left: 0rem;
+
+    }
+
+    .container {
+
+        padding: 0 0rem;
+    }
+
+    .about-section {
+        padding: 0rem 1rem;
+
+    }
+
 }

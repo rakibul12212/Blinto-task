@@ -40,15 +40,16 @@
 .stats-row {
     display: flex;
     justify-content: center;
+    padding-top: 2rem;
     gap: 1;
 }
 
 .stat-box {
-    
+
     text-align: center;
     max-width: 800px;
     padding: 0px 20px;
-   
+
 }
 
 .stat-box.border {
@@ -56,21 +57,24 @@
 }
 
 .stat-number {
-    font-size: 2.55rem;
+    font-size: 2.5rem;
     font-weight: 500;
     color: #6366f1;
     margin-bottom: 0.25rem;
     margin-top: 0.25rem;
     padding-inline: 70px;
-    
+
 }
 
 .stat-label {
     color: #374151;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 0.8rem;
+
     margin-bottom: 0.25rem;
-    
+
 }
+
 
 
 @media (max-width: 768px) {
@@ -80,28 +84,41 @@
         gap: 1.5rem;
     }
 
-   
+
     .stat-box.border {
         border-right: none;
         border-bottom: 1px solid rgb(203, 203, 203);
-       
+
     }
 
     .stat-box {
         padding: 10px 15px;
-        
+
     }
 
     .stat-number {
         font-size: 4rem;
         font-weight: 500;
         margin-bottom: 1rem;
-      
+
     }
 
     .stat-label {
         font-size: 1rem;
         font-weight: 700;
         margin-top: 1rem;
+    }
+
+    .section-title {
+        font-size: 1.7rem;
+        font-weight: 800;
+        text-align: center;
+        
+    }
+
+    .stats-section {
+
+        padding: 0rem 1rem;
+
     }
 }

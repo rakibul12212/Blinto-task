@@ -6,7 +6,7 @@
 
     max-width: 1200px;
     margin: auto;
-    padding: 4rem 1rem;
+    padding: 4rem 5rem;
     text-align: left;
 }
 
@@ -86,7 +86,7 @@
     }
 
     .location-header h2 {
-        font-size: 1.4rem;
+        font-size: 2.2rem;
     }
 
 
@@ -97,5 +97,12 @@
 
     .location-item p {
         font-size: 0.85rem;
+    }
+
+    .location-container {
+
+        
+        padding: 1rem 1rem;
+       
     }
 }
