@@ -33,6 +33,8 @@
     gap: 1.5rem;
     grid-template-columns: repeat(1, 1fr);
     margin-bottom: 2rem;
+
+
 }
 
 .card {
@@ -40,6 +42,8 @@
     border-radius: 1rem;
     padding: 1rem;
     text-align: left;
+
+
 }
 
 .stars {
@@ -71,7 +75,7 @@
 
 .view-more-btn {
     display: block;
-    
+
     margin: 1.5rem auto 0 auto;
 
     padding: 0.5rem 1.5rem;
