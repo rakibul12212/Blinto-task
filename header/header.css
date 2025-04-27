@@ -4,16 +4,18 @@
     position: sticky;
     top: 0;
     z-index: 1000;
+    width: 100%;
 }
 
 .nav-container {
     max-width: 1200px;
-    max-height: 80px;
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 0 5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 64px;
+    
 }
 
 .left {
@@ -35,6 +37,7 @@
 .nav-links {
     display: flex;
     gap: 24px;
+    align-items: center;
 }
 
 .nav-links a {
@@ -63,7 +66,6 @@
     transition: 0.3s;
     border: none;
 }
-
 
 .btn.outline {
     background-color: white;
@@ -96,7 +98,6 @@
     cursor: pointer;
 }
 
-
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -106,10 +107,12 @@
         right: 0;
         background: white;
         flex-direction: column;
-        align-items: left;
-        gap: 12px;
-        padding: 16px 10px;
+        align-items: flex-start;
+        /* better than left */
+        gap: 16px;
+        padding: 16px 20px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        z-index: 999;
     }
 
     .nav-links.active {
@@ -120,8 +123,7 @@
         display: block;
     }
 
-    .btn.outline,
-    .btn.solid {
+    .right .btn {
         display: none;
     }
 }

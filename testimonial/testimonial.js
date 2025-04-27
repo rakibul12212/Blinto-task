@@ -3,7 +3,7 @@ function initTestimonialSection() {
   if (!testimonialsContainer) return;
 
   const viewMoreButton = document.createElement("button");
-  viewMoreButton.textContent = "View More";
+  viewMoreButton.textContent = "Load More +";
   viewMoreButton.classList.add("view-more-btn");
   testimonialsContainer.parentElement.appendChild(viewMoreButton);
 
