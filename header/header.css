@@ -15,7 +15,7 @@
     align-items: center;
     justify-content: space-between;
     height: 64px;
-    
+
 }
 
 .left {
@@ -99,6 +99,14 @@
 }
 
 @media (max-width: 768px) {
+
+    .nav-container {
+
+        padding: 0rem 1rem;
+
+
+    }
+
     .nav-links {
         display: none;
         position: absolute;
@@ -108,7 +116,6 @@
         background: white;
         flex-direction: column;
         align-items: flex-start;
-        /* better than left */
         gap: 16px;
         padding: 16px 20px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
@@ -117,7 +124,22 @@
 
     .nav-links.active {
         display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        padding: 16px 20px;
+        background: rgb(249, 248, 252);
+        position: absolute;
+        top: 74px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        height: calc(100vh - 64px);
+
+        z-index: 999;
     }
+
 
     .menu-toggle {
         display: block;
